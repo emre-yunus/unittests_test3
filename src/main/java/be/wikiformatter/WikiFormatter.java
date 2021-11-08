@@ -6,6 +6,8 @@ public class WikiFormatter {
         for (String strings : arrayOfStrings) {
             if (!strings.contains("*")) {
                 emptyString += "<p>";
+                emptyString += strings;
+                emptyString += "</p>";
             }
             if (strings.contains("*")) {
                 int i = strings.indexOf("*");
@@ -27,9 +29,6 @@ public class WikiFormatter {
                             emptyString += "</p>";
                     }
                 }
-            } else {
-                emptyString += strings;
-                emptyString += "</p>";
             }
         }
         return emptyString;
