@@ -9,7 +9,6 @@ public class WikiFormatter {
             } else {
                 int i = strings.indexOf("*");
                 String[] part = strings.split("\\*");
-                int previous = i - 1;
                 if (part.length > 0) {
                     for (int j = 0; j < part.length; j++) {
                         if (j == 0) {
