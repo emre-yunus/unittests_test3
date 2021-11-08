@@ -35,8 +35,7 @@ public class WikiFormatter {
                 } else {
                     part[i] = arrayOfStrings[previous];
                 }
-            }
-            if (notFound) {
+            } else {
                 emptyString += strings;
                 emptyString += "</p>";
             }
