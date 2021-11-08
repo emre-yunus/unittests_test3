@@ -20,9 +20,6 @@ public class WikiFormatter {
                             emptyString += "<b>";
                         if (j >= 0 && j < part.length) {
                             emptyString += part[j];
-                        } else {
-                            j = part.length;
-                            emptyString = part[j-1];
                         }
                         if (j % 2 == 1) {
                             emptyString += "</b>";
