@@ -12,7 +12,7 @@ public class WikiFormatter {
                 int previous = i - 1;
                 if (part.length > 0) {
                     for (int j = 0; j < part.length; j++) {
-                        if (previous > i || j == 0) {
+                        if (j == 0) {
                             emptyString += "<p>";
                         }
                         if (i != previous && j % 2 == 1) emptyString += "<b>";
