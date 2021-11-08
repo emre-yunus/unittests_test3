@@ -14,8 +14,8 @@ public class WikiFormatter {
                         if (j % 2 == 1) emptyString += "<b>";
                         emptyString += part[j];
                         if (j % 2 == 1) emptyString += "</b>";
-                        if (j >= part.length - 1) emptyString += "</p>";
                     }
+                    emptyString += "</p>";
                 }
             }
         }
