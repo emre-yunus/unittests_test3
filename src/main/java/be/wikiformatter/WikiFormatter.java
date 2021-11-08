@@ -4,12 +4,12 @@ public class WikiFormatter {
     public String format(String[] arrayOfStrings) {
         String emptyString = "";
         for (String strings : arrayOfStrings) {
-            boolean notFound = false;
+            boolean found = true;
             if (!strings.contains("*")) {
                 emptyString += "<p>";
-                notFound = true;
+                found = false;
             }
-            if (!notFound) {
+            if (found) {
                 int i = strings.indexOf("*");
                 String[] part = strings.split("\\*");
                 int previous = i - 1;
@@ -42,5 +42,4 @@ public class WikiFormatter {
         }
         return emptyString;
     }
-
 }
