@@ -7,7 +7,6 @@ public class WikiFormatter {
             if (!strings.contains("*")) {
                 emptyString += "<p>" + strings + "</p>";
             } else {
-                int i = strings.indexOf("*");
                 String[] part = strings.split("\\*");
                 if (part.length > 0) {
                     for (int j = 0; j < part.length; j++) {
