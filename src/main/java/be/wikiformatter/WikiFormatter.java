@@ -15,7 +15,7 @@ public class WikiFormatter {
                         if (j == 0) {
                             emptyString += "<p>";
                         }
-                        if (i != previous && j % 2 == 1) emptyString += "<b>";
+                        if (j % 2 == 1) emptyString += "<b>";
 
                         emptyString += part[j];
 
