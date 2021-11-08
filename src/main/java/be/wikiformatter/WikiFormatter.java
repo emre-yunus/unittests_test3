@@ -9,8 +9,8 @@ public class WikiFormatter {
             } else {
                 String[] part = strings.split("\\*");
                 if (part.length > 0) {
+                    emptyString += "<p>";
                     for (int j = 0; j < part.length; j++) {
-                        if (j == 0) emptyString += "<p>";
                         if (j % 2 == 1) emptyString += "<b>";
                         emptyString += part[j];
                         if (j % 2 == 1) emptyString += "</b>";
