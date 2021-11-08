@@ -5,9 +5,7 @@ public class WikiFormatter {
         String emptyString = "";
         for (String strings : arrayOfStrings) {
             if (!strings.contains("*")) {
-                emptyString += "<p>";
-                emptyString += strings;
-                emptyString += "</p>";
+                emptyString += "<p>" + strings + "</p>";
             }
             if (strings.contains("*")) {
                 int i = strings.indexOf("*");
