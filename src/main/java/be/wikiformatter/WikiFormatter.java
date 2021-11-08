@@ -26,8 +26,6 @@ public class WikiFormatter {
                         if (j >= part.length - 1)
                             emptyString += "</p>";
                     }
-                } else {
-                    part[i] = arrayOfStrings[previous];
                 }
             } else {
                 emptyString += strings;
